@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTRATION FORM"
+        android:textSize="30dp"/>
+
+    <EditText
+        android:id="@+id/namefield"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="FULL NAME"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/texttitle"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:id="@+id/passwordfield"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/namefield"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordfield"
+        android:hint="DOB"
+        android:id="@+id/dobfield"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E-Mail"
+        android:layout_below="@+id/dobfield"
+        android:id="@+id/emailfield"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailfield"
+        android:hint="Phone Number"
+        android:layout_marginTop="10dp"
+        android:id="@+id/phonefield"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/statefield"
+        android:layout_below="@id/phonefield"
+        android:layout_marginTop="10dp"
+        android:hint="STATE"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/statefield"
+        android:text="SUBMIT"
+        android:id="@+id/submitbutton"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UPDATE"
+        android:layout_marginTop="10dp"
+        android:id="@+id/updatebutton"
+        android:layout_below="@id/submitbutton"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updatebutton"
+        android:id="@+id/deletebutton"
+        android:text="DELETE"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DISPLAY RECORD"
+        android:layout_below="@id/deletebutton"
+        android:layout_marginTop="10dp"/>
+    <!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="STATE: "-->
+<!--        android:textSize="20dp"-->
+<!--        android:id="@+id/statefield"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_below="@+id/passwordfield"/>-->
+<!--    <Spinner-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/statefield"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:id="@+id/spinnerstate"/>-->
+
+</RelativeLayout>
