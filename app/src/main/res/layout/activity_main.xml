@@ -18,17 +18,17 @@
         android:id="@+id/namefield"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="FULL NAME"
+        android:layout_below="@+id/texttitle"
         android:layout_marginTop="10dp"
-        android:layout_below="@+id/texttitle"/>
+        android:hint="FULL NAME" />
 
     <EditText
+        android:id="@+id/passwordfield"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Password"
-        android:id="@+id/passwordfield"
+        android:layout_below="@id/namefield"
         android:layout_marginTop="10dp"
-        android:layout_below="@id/namefield"/>
+        android:hint="Password" />
 
     <EditText
         android:layout_width="match_parent"
@@ -63,35 +63,44 @@
         android:hint="STATE"/>
 
     <Button
+        android:id="@+id/submitbutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/statefield"
-        android:text="SUBMIT"
-        android:id="@+id/submitbutton"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:text="SUBMIT" />
 
     <Button
+        android:id="@+id/updatebutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="UPDATE"
+        android:layout_below="@id/submitbutton"
         android:layout_marginTop="10dp"
-        android:id="@+id/updatebutton"
-        android:layout_below="@id/submitbutton"/>
+        android:text="UPDATE" />
 
     <Button
+        android:id="@+id/deletebutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/updatebutton"
-        android:id="@+id/deletebutton"
-        android:text="DELETE"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:text="DELETE" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="DISPLAY RECORD"
         android:layout_below="@id/deletebutton"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:id="@+id/display"
+        android:text="DISPLAY RECORD" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/display"
+        android:layout_marginTop="10dp"
+        android:id="@+id/reset"
+        android:text="RESET FIELDS" />
     <!--    <TextView-->
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="wrap_content"-->
