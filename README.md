@@ -6,3 +6,5 @@ A simple registration page that takes the data from the user and stores it in a 
 2. SQLite
 3. JAVA
 
+# OUTPUT
+![](output-screenshots/database.png)
